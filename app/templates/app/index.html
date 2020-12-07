@@ -1,7 +1,26 @@
 {% extends 'app/layout.html' %}
 
 {% block body %}
-<div class="container">
-    <h1>Browse by</h1>
+<div class="container d-flex" style="height: 80vh">
+    <div class="container my-auto">
+        <div class="row d-flex justify-content-center mt-5">
+            <div>
+                <h1>Browse By</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="container">
+                    <a href="{% url 'songs' %}" class="btn btn-block btn-secondary">Songs</a>
+                </div>
+            </div>
+            <div class="col-4">
+                <a href="{% url 'artists' %}" class="btn btn-block btn-info">Artists</a>
+            </div>
+            <div class="col-4">
+                <a href="{% url 'albums' %}" class="btn btn-block btn-dark">Albums</a>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}

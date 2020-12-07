@@ -1,0 +1,26 @@
+{% extends 'app/layout.html' %}
+
+{% block body %}
+<div class="container">
+    <div class="row justify-content-center">
+        <h1>All Songs</h1>
+    </div>
+    <div class="row justify-content-center">
+            <a href="?with=0-9" class="badge badge-light" style="font-size: 1rem">
+                0-9
+            </a>
+        {% for letter in alphabets %}
+            <a href="?with={{letter}}" class="badge badge-light" style="font-size: 1rem">
+            {{ letter }}
+            </a>
+        {% endfor %}
+    </div>
+    <div class="row flex-column mt-5">
+        <div class="container">
+            {% for song in songs %}
+                <a href="{% url 'song' song.id %}" class="nav-item nav-link btn btn-light">{{ song }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -8,9 +8,7 @@ There are:
 
 An artist can have many songs, and an artist can have many albums. 
 
-An album can have many songs. An album can have many songs. 
-
-An artist can have many songs, and an artist can have many albums. 
+An album can have many songs.
 
 ### Technologies Used
 - Python
