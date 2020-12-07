@@ -1,4 +1,4 @@
-# Music App 
+# Music App - GA Lab 7/12/2020
 
 ## Make a music app
 There are:
